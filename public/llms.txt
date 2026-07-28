@@ -1,0 +1,20 @@
+# Image Meta Analyzer
+
+> Browser-based tool for reading image metadata locally without uploading the image to an application server.
+
+The application extracts and organizes EXIF, TIFF, IPTC, XMP, ICC, camera, date, and GPS metadata. It can display GPS coordinates on an OpenStreetMap map and export extracted data as JSON or CSV.
+
+## Main pages
+
+- [Image Meta Analyzer](https://image-met-extra.netlify.app/): Analyze image metadata in the browser.
+- [Privacy policy](https://image-met-extra.netlify.app/privacy.html): Image processing, external map services, advertising, and cookies.
+
+## Documentation and source
+
+- [Source code](https://github.com/felipesantos2/image-meta-extrator): Project repository and technical documentation.
+
+## Important details
+
+- Images and extracted metadata are processed locally in the browser.
+- Opening the GPS map can request map tiles from OpenStreetMap.
+- The interface is available in Portuguese and English.

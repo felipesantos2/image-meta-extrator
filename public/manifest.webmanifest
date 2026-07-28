@@ -1,0 +1,19 @@
+{
+	"name": "Image Meta Analyzer",
+	"short_name": "Image Meta",
+	"description": "Analise metadados EXIF, IPTC, câmera e GPS diretamente no navegador.",
+	"lang": "pt-BR",
+	"start_url": "/",
+	"scope": "/",
+	"display": "standalone",
+	"background_color": "#141210",
+	"theme_color": "#141210",
+	"icons": [
+		{
+			"src": "/favicon.svg",
+			"sizes": "any",
+			"type": "image/svg+xml",
+			"purpose": "any"
+		}
+	]
+}

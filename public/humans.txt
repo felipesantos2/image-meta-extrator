@@ -1,0 +1,14 @@
+/* TEAM */
+
+Developer: Felipe Pinheiro
+GitHub: https://github.com/felipesantos2
+LinkedIn: https://www.linkedin.com/in/felipepinheiro2/
+
+/* SITE */
+
+Name: Image Meta Analyzer
+URL: https://image-met-extra.netlify.app/
+Language: Portuguese and English
+Standards: HTML5, CSS, JavaScript
+Components: React, Vite, Tailwind CSS
+
