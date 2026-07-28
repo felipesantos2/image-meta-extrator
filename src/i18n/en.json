@@ -75,6 +75,71 @@
 		"githubLabel": "Open repository on GitHub",
 		"linkedinLabel": "Open LinkedIn profile"
 	},
+	"navigation": {
+		"primary": "Primary navigation",
+		"footer": "Footer navigation",
+		"howItWorks": "How it works",
+		"metadata": "Metadata",
+		"about": "About"
+	},
+	"consent": {
+		"title": "Your privacy",
+		"description": "We use Google services for analytics and advertising. You can accept them or keep storage disabled for these services.",
+		"policy": "Learn more",
+		"accept": "Accept",
+		"reject": "Reject"
+	},
+	"guide": {
+		"eyebrow": "Understand your image",
+		"title": "How to analyze a photo's metadata",
+		"introduction": "Metadata is information stored inside an image file. It may indicate which camera was used, when the photo was created, its dimensions, capture settings and, in some cases, the location recorded by the device.",
+		"steps": {
+			"select": {
+				"title": "Select the image",
+				"description": "Choose a photo from your device or drag the file to the area above. Reading starts directly in your browser."
+			},
+			"analyze": {
+				"title": "Review the fields",
+				"description": "The available data is organized into camera, image, date, GPS and raw data categories to make it easier to understand."
+			},
+			"export": {
+				"title": "Export the result",
+				"description": "Download the available metadata as JSON or CSV for documentation, inventory or further analysis."
+			}
+		},
+		"metadata": {
+			"title": "What metadata can reveal",
+			"introduction": "The amount of information varies according to the camera, phone, editing application and file format. Social networks and messaging apps may also remove some of this data when sharing an image.",
+			"camera": {
+				"title": "Camera and capture",
+				"description": "Manufacturer, model, lens, focal length, aperture, shutter speed, ISO, flash and white balance help explain how the image was produced."
+			},
+			"datetime": {
+				"title": "Date and editing",
+				"description": "EXIF and XMP fields may record the original date, later changes, the software used and other information about the editing workflow."
+			},
+			"location": {
+				"title": "GPS location",
+				"description": "Some devices store latitude, longitude and altitude. Sharing the original file may therefore reveal where the photo was taken."
+			},
+			"limits": {
+				"title": "Missing data does not prove that an image was not edited",
+				"description": "Metadata can be changed or removed. The result only describes fields found in the analyzed file and should not be used by itself to authenticate an image, identify its author or determine its origin."
+			}
+		},
+		"privacy": {
+			"title": "The image is processed locally",
+			"description": "File reading and metadata extraction happen in your browser. The application does not send the image or the extracted data to its own server.",
+			"mapNotice": "If coordinates are available and you open the GPS tab, the map contacts OpenStreetMap. This external request may reveal technical data and the region displayed on the map to the provider.",
+			"link": "Read the complete privacy policy"
+		},
+		"about": {
+			"title": "About Image Meta Analyzer",
+			"description": "This is an independent, open-source project created by Felipe Pinheiro to make EXIF, IPTC, XMP and other metadata easier to inspect. The tool is free and does not require an account.",
+			"contact": "Found an incorrect result, want to suggest a file format or need to report an accessibility issue? Use the project's public issue tracker to get in touch.",
+			"contactLink": "Open the contact channel on GitHub"
+		}
+	},
 	"raw": {
 		"description": "All metadata fields found in the file",
 		"noData": "No metadata found"
@@ -87,7 +152,8 @@
 	"footer": {
 		"madeWith": "Made with",
 		"for": "for image metadata analysis",
-		"privacy": "Privacy: no image or metadata is sent to external servers",
-		"privacyPolicy": "Privacy policy"
+		"privacy": "The image is processed locally; the map uses an external service",
+		"privacyPolicy": "Privacy policy",
+		"cookieSettings": "Cookie preferences"
 	}
 }

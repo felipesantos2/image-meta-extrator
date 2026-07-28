@@ -75,6 +75,71 @@
 		"githubLabel": "Abrir repositório no GitHub",
 		"linkedinLabel": "Abrir perfil no LinkedIn"
 	},
+	"navigation": {
+		"primary": "Navegação principal",
+		"footer": "Navegação do rodapé",
+		"howItWorks": "Como funciona",
+		"metadata": "Metadados",
+		"about": "Sobre"
+	},
+	"consent": {
+		"title": "Sua privacidade",
+		"description": "Usamos serviços do Google para métricas e publicidade. Você pode aceitar ou manter o armazenamento para esses serviços desativado.",
+		"policy": "Saiba mais",
+		"accept": "Aceitar",
+		"reject": "Recusar"
+	},
+	"guide": {
+		"eyebrow": "Entenda sua imagem",
+		"title": "Como analisar os metadados de uma foto",
+		"introduction": "Metadados são informações gravadas dentro do arquivo da imagem. Eles podem indicar qual câmera foi usada, quando a foto foi criada, suas dimensões, configurações de captura e, em alguns casos, a localização registrada pelo dispositivo.",
+		"steps": {
+			"select": {
+				"title": "Selecione a imagem",
+				"description": "Escolha uma foto do seu dispositivo ou arraste o arquivo para a área acima. A leitura começa no próprio navegador."
+			},
+			"analyze": {
+				"title": "Consulte os campos",
+				"description": "Os dados encontrados são organizados por câmera, imagem, data, GPS e dados brutos para facilitar a interpretação."
+			},
+			"export": {
+				"title": "Exporte o resultado",
+				"description": "Baixe os metadados disponíveis em JSON ou CSV para documentação, inventário ou uma análise posterior."
+			}
+		},
+		"metadata": {
+			"title": "O que os metadados podem revelar",
+			"introduction": "A quantidade de informações varia conforme a câmera, o celular, o aplicativo de edição e o formato do arquivo. Redes sociais e mensageiros também podem remover parte desses dados durante o envio.",
+			"camera": {
+				"title": "Câmera e captura",
+				"description": "Fabricante, modelo, lente, distância focal, abertura, velocidade do obturador, ISO, flash e balanço de branco ajudam a entender como a imagem foi produzida."
+			},
+			"datetime": {
+				"title": "Data e edição",
+				"description": "Campos EXIF e XMP podem registrar a data original, alterações posteriores, software utilizado e outras informações do fluxo de edição."
+			},
+			"location": {
+				"title": "Localização GPS",
+				"description": "Alguns dispositivos salvam latitude, longitude e altitude. Compartilhar o arquivo original pode, portanto, revelar onde a foto foi registrada."
+			},
+			"limits": {
+				"title": "Ausência de dados não comprova ausência de edição",
+				"description": "Metadados podem ser alterados ou apagados. O resultado descreve somente os campos presentes no arquivo analisado e não deve ser usado isoladamente para autenticar uma imagem, identificar seu autor ou determinar sua origem."
+			}
+		},
+		"privacy": {
+			"title": "A imagem é processada localmente",
+			"description": "A leitura do arquivo e a extração dos metadados acontecem no seu navegador. O aplicativo não envia a imagem nem os dados extraídos para um servidor próprio.",
+			"mapNotice": "Se houver coordenadas e você abrir a aba GPS, o mapa consulta o OpenStreetMap. Essa consulta externa pode revelar ao provedor dados técnicos e a região mostrada no mapa.",
+			"link": "Leia a política de privacidade completa"
+		},
+		"about": {
+			"title": "Sobre o Image Meta Analyzer",
+			"description": "Este é um projeto independente e de código aberto criado por Felipe Pinheiro para tornar a leitura de EXIF, IPTC, XMP e outros metadados mais acessível. A ferramenta é gratuita e funciona sem cadastro.",
+			"contact": "Encontrou um resultado incorreto, precisa sugerir um formato ou quer relatar um problema de acessibilidade? Use o rastreador público do projeto para entrar em contato.",
+			"contactLink": "Abrir canal de contato no GitHub"
+		}
+	},
 	"raw": {
 		"description": "Todos os campos de metadados encontrados no arquivo",
 		"noData": "Nenhum metadado encontrado"
@@ -87,7 +152,8 @@
 	"footer": {
 		"madeWith": "Feito com",
 		"for": "para análise de metadados de imagens",
-		"privacy": "Privacidade: nenhuma imagem ou metadado é enviado para servidores externos",
-		"privacyPolicy": "Política de privacidade"
+		"privacy": "A imagem é processada localmente; o mapa usa um serviço externo",
+		"privacyPolicy": "Política de privacidade",
+		"cookieSettings": "Preferências de cookies"
 	}
 }

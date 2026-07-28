@@ -5,7 +5,9 @@ import DropZone from './components/DropZone';
 import ImagePreview from './components/ImagePreview';
 import MetadataTabs from './components/MetadataTabs';
 import ExportButtons from './components/ExportButtons';
+import ContentGuide from './components/ContentGuide';
 import Footer from './components/Footer';
+import ConsentBanner from './components/ConsentBanner';
 import { parseMetadata } from './utils/parseMetadata';
 import { removeFileExtension } from './utils/helpers';
 
@@ -103,9 +105,12 @@ export default function App() {
 						</div>
 					</div>
 				)}
+
+				<ContentGuide />
 			</main>
 
 			<Footer />
+			<ConsentBanner />
 		</div>
 	);
 }

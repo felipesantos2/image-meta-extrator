@@ -6,6 +6,28 @@
 		<link rel="manifest" href="/manifest.webmanifest" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+		<!-- Consent Mode: o armazenamento fica negado até a escolha do visitante. -->
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+
+			const consentAccepted =
+				localStorage.getItem('image-meta-google-consent') === 'accepted';
+			const consentValue = consentAccepted ? 'granted' : 'denied';
+
+			gtag('consent', 'default', {
+				ad_storage: consentValue,
+				ad_user_data: consentValue,
+				ad_personalization: consentValue,
+				analytics_storage: consentValue,
+				functionality_storage: 'granted',
+				security_storage: 'granted',
+				wait_for_update: 500,
+			});
+		</script>
+
 		<!-- Google AdSense -->
 		<meta name="google-adsense-account" content="ca-pub-5297586230684986" />
 		<script
@@ -17,10 +39,6 @@
 		<!-- Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-WMNCYNSNMJ"></script>
 		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag() {
-				dataLayer.push(arguments);
-			}
 			gtag('js', new Date());
 			gtag('config', 'G-WMNCYNSNMJ');
 		</script>

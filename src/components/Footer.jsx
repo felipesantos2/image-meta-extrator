@@ -38,6 +38,28 @@ export default function Footer() {
 					>
 						{t('footer.privacyPolicy')}
 					</a>
+					<button
+						className="text-xs text-[var(--color-text-muted)] hover:text-[var(--color-accent)] transition-colors cursor-pointer"
+						type="button"
+						onClick={() => window.dispatchEvent(new Event('open-consent-settings'))}
+					>
+						{t('footer.cookieSettings')}
+					</button>
+
+					<nav
+						className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-xs"
+						aria-label={t('navigation.footer')}
+					>
+						<a className="hover:text-[var(--color-accent)]" href="/#como-funciona">
+							{t('navigation.howItWorks')}
+						</a>
+						<a className="hover:text-[var(--color-accent)]" href="/#guia-metadados">
+							{t('navigation.metadata')}
+						</a>
+						<a className="hover:text-[var(--color-accent)]" href="/#sobre">
+							{t('navigation.about')}
+						</a>
+					</nav>
 
 					<p className="text-[10px] opacity-60 text-center mt-1">
 						&copy; {new Date().getFullYear()} Image Meta Analyzer.

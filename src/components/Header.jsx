@@ -20,6 +20,21 @@ export default function Header({ theme, onToggleTheme }) {
 		<header className="sticky top-0 z-50 w-full bg-[var(--color-surface-elevated)] border-b border-[var(--color-border)] backdrop-blur-md">
 			<div className="w-full max-w-5xl mx-auto px-6 py-4">
 				<div className="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] items-center gap-4 min-h-10">
+					<nav
+						className="hidden md:flex items-center gap-4 text-xs text-[var(--color-text-secondary)]"
+						aria-label={t('navigation.primary')}
+					>
+						<a className="hover:text-[var(--color-accent)]" href="#como-funciona">
+							{t('navigation.howItWorks')}
+						</a>
+						<a className="hover:text-[var(--color-accent)]" href="#guia-metadados">
+							{t('navigation.metadata')}
+						</a>
+						<a className="hover:text-[var(--color-accent)]" href="#sobre">
+							{t('navigation.about')}
+						</a>
+					</nav>
+
 					{/* Logo e título centralizados */}
 					<div className="flex items-center justify-center gap-3 md:col-start-2">
 						<CameraLogo className="w-7 h-7 text-[var(--color-accent)] shrink-0" />
