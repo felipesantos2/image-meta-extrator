@@ -46,7 +46,7 @@ export default function Header({ theme, onToggleTheme }) {
 							className="inline-flex items-center justify-center gap-2 h-10 px-2 lg:px-3 border border-[var(--color-accent)] rounded bg-[var(--color-accent-bg)] text-[var(--color-accent)] hover:bg-[var(--color-surface-hover)] transition-colors"
 							href="https://www.linkedin.com/in/felipepinheiro2/"
 							target="_blank"
-							rel="noreferrer"
+							rel="me noreferrer"
 							aria-label={t('controls.linkedinLabel')}
 							title={t('controls.linkedinLabel')}
 						>

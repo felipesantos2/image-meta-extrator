@@ -49,7 +49,7 @@ npm run build     # gera a versão de produção em dist/
 
 ## Deploy
 
-O projeto inclui um `netlify.toml` com o comando de build e o diretório de publicação necessários para o Netlify.
+O site está publicado em [image-met-extra.netlify.app](https://image-met-extra.netlify.app/). O projeto inclui um `netlify.toml` com o comando de build e o diretório de publicação necessários para o Netlify.
 
 ### Google AdSense
 

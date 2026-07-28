@@ -1,42 +1,79 @@
 <!doctype html>
 <html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-	<meta charset="UTF-8" />
-	<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- Google AdSense -->
+		<meta name="google-adsense-account" content="ca-pub-5297586230684986" />
+		<script
+			async
+			src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5297586230684986"
+			crossorigin="anonymous"
+		></script>
 
-	<!-- Google AdSense -->
-	<meta name="google-adsense-account" content="ca-pub-5297586230684986" />
-	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5297586230684986"
-		crossorigin="anonymous"></script>
+		<!-- SEO -->
+		<title>Leitor de Metadados de Imagem Online | EXIF e GPS</title>
+		<meta
+			name="description"
+			content="Analise metadados EXIF, IPTC, câmera e GPS de imagens diretamente no navegador, com processamento local do arquivo."
+		/>
+		<meta name="author" content="Felipe Pinheiro" />
+		<meta name="robots" content="index, follow" />
+		<meta name="theme-color" content="#141210" />
+		<link rel="canonical" href="https://image-met-extra.netlify.app/" />
 
-	<!-- SEO Básico -->
-	<title>Leitor de Metadados de Imagem | Extrair EXIF, IPTC e GPS Online</title>
-	<meta name="description"
-		content="Visualizador de metadados de imagem local e seguro. Extraia instantaneamente dados EXIF, IPTC, coordenadas GPS e detalhes da câmera diretamente no seu navegador, sem enviar arquivos para servidores." />
-	<meta name="keywords"
-		content="metadados de imagem, leitor exif online, exif viewer, extrair gps de foto, dados da foto, exif, iptc, dados da câmera, privacidade de fotos" />
-	<meta name="robots" content="index, follow" />
-	<!-- Open Graph / Facebook -->
-	<meta property="og:type" content="website" />
-	<meta property="og:title" content="Leitor de Metadados de Imagem | Extrair EXIF, IPTC e GPS Online" />
-	<meta property="og:description"
-		content="Visualize metadados EXIF, IPTC e coordenadas GPS diretamente no navegador." />
-	<meta property="og:image" content="/favicon.svg" />
-	<meta property="og:site_name" content="Leitor de Metadados" />
+		<!-- Open Graph -->
+		<meta property="og:type" content="website" />
+		<meta property="og:locale" content="pt_BR" />
+		<meta property="og:url" content="https://image-met-extra.netlify.app/" />
+		<meta property="og:title" content="Leitor de Metadados de Imagem Online | EXIF e GPS" />
+		<meta
+			property="og:description"
+			content="Analise metadados EXIF, IPTC, câmera e GPS diretamente no navegador."
+		/>
+		<meta property="og:image" content="https://image-met-extra.netlify.app/favicon.svg" />
+		<meta property="og:image:alt" content="Ícone do Image Meta Analyzer" />
+		<meta property="og:site_name" content="Image Meta Analyzer" />
 
-	<!-- Twitter -->
-	<meta property="twitter:card" content="summary_large_image" />
-	<meta property="twitter:title" content="Leitor de Metadados de Imagem | Extrair EXIF, IPTC e GPS" />
-	<meta property="twitter:description"
-		content="Visualize metadados EXIF, IPTC e coordenadas GPS diretamente no navegador." />
-	<meta property="twitter:image" content="/favicon.svg" />
-</head>
+		<!-- Twitter -->
+		<meta name="twitter:card" content="summary" />
+		<meta name="twitter:title" content="Leitor de Metadados de Imagem Online | EXIF e GPS" />
+		<meta
+			name="twitter:description"
+			content="Analise metadados EXIF, IPTC, câmera e GPS diretamente no navegador."
+		/>
+		<meta name="twitter:image" content="https://image-met-extra.netlify.app/favicon.svg" />
+		<meta name="twitter:image:alt" content="Ícone do Image Meta Analyzer" />
 
-<body>
-	<div id="root"></div>
-	<script type="module" src="/src/main.jsx"></script>
-</body>
+		<script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@type": "WebApplication",
+				"@id": "https://image-met-extra.netlify.app/#application",
+				"url": "https://image-met-extra.netlify.app/",
+				"name": "Image Meta Analyzer",
+				"description": "Aplicação web para analisar metadados EXIF, IPTC, câmera e GPS de imagens.",
+				"applicationCategory": "UtilitiesApplication",
+				"operatingSystem": "Any",
+				"browserRequirements": "Requires JavaScript",
+				"isAccessibleForFree": true,
+				"sameAs": "https://github.com/felipesantos2/image-meta-extrator",
+				"author": {
+					"@type": "Person",
+					"name": "Felipe Pinheiro",
+					"sameAs": [
+						"https://github.com/felipesantos2",
+						"https://www.linkedin.com/in/felipepinheiro2/"
+					]
+				}
+			}
+		</script>
+	</head>
 
+	<body>
+		<div id="root"></div>
+		<script type="module" src="/src/main.jsx"></script>
+	</body>
 </html>
