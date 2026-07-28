@@ -44,6 +44,7 @@ npm run build     # gera a versão de produção em dist/
 ## Documentação
 
 - [Guia de metadados e privacidade](METADATA.md)
+- [Guia de desenvolvimento](DEVELOPMENT.md)
 - [Diretrizes do projeto para agentes](.agents/AGENTS.md)
 
 ## Deploy
