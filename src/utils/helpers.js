@@ -23,3 +23,16 @@ export function escapeCsvQuotes(value) {
 	if (!value) return '';
 	return value.split('"').join('""');
 }
+
+/** Verifica se o arquivo informado é uma imagem reconhecida pelo navegador. */
+export function isImageFile(file) {
+	return Boolean(file?.type?.startsWith('image/'));
+}
+
+/** Impede que valores de metadados sejam interpretados como fórmulas em planilhas. */
+export function neutralizeCsvFormula(value) {
+	const firstCharacter = value.trimStart().charAt(0);
+	const formulaPrefixes = ['=', '+', '-', '@'];
+
+	return formulaPrefixes.includes(firstCharacter) ? `'${value}` : value;
+}

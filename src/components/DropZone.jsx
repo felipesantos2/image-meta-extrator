@@ -1,11 +1,23 @@
 import { useState, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import { ImagePlus, Upload } from 'lucide-react';
+import { isImageFile } from '../utils/helpers';
 
 export default function DropZone({ onFileSelect }) {
 	const { t } = useTranslation();
 	const [isDragOver, setIsDragOver] = useState(false);
+	const [hasValidationError, setHasValidationError] = useState(false);
 	const fileInputRef = useRef(null);
+
+	function validateAndSelect(file) {
+		if (!isImageFile(file)) {
+			setHasValidationError(true);
+			return;
+		}
+
+		setHasValidationError(false);
+		onFileSelect(file);
+	}
 
 	function handleDragOver(e) {
 		e.preventDefault();
@@ -19,17 +31,12 @@ export default function DropZone({ onFileSelect }) {
 	function handleDrop(e) {
 		e.preventDefault();
 		setIsDragOver(false);
-		const file = e.dataTransfer.files[0];
-		if (file && file.type.startsWith('image/')) {
-			onFileSelect(file);
-		}
+		validateAndSelect(e.dataTransfer.files[0]);
 	}
 
 	function handleFileInput(e) {
-		const file = e.target.files[0];
-		if (file) {
-			onFileSelect(file);
-		}
+		validateAndSelect(e.target.files[0]);
+		e.target.value = '';
 	}
 
 	function handleButtonClick() {
@@ -92,7 +99,6 @@ export default function DropZone({ onFileSelect }) {
 						type="button"
 					>
 						<Upload size={16} />
-						
 						{t('dropzone.button')}
 					</button>
 				</div>
@@ -108,6 +114,15 @@ export default function DropZone({ onFileSelect }) {
 				<p className="mt-5 text-xs text-[var(--color-text-muted)]">
 					{t('dropzone.formats')}
 				</p>
+				{hasValidationError && (
+					<p
+						className="mt-3 text-sm text-[var(--color-accent)]"
+						role="alert"
+						aria-live="polite"
+					>
+						{t('dropzone.invalidFile')}
+					</p>
+				)}
 			</div>
 		</div>
 	);

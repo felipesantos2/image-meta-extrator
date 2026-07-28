@@ -8,7 +8,8 @@
 		"title": "Drop your image here",
 		"or": "or",
 		"button": "Select file",
-		"formats": "Supports JPEG, PNG, TIFF, WebP and HEIC"
+		"formats": "Supports JPEG, PNG, TIFF, WebP and HEIC",
+		"invalidFile": "Select a valid image file"
 	},
 	"preview": {
 		"filename": "File",
@@ -59,7 +60,18 @@
 		"latitude": "Latitude",
 		"longitude": "Longitude",
 		"altitude": "Altitude",
-		"noData": "No location data available for this image"
+		"noData": "No location data available for this image",
+		"externalMapNotice": "The map uses images provided by OpenStreetMap"
+	},
+	"metadata": {
+		"processing": "Processing...",
+		"parseError": "This image could not be read. Check that the file is valid."
+	},
+	"controls": {
+		"language": "Select language",
+		"toggleTheme": "Toggle theme",
+		"lightMode": "Use light theme",
+		"darkMode": "Use dark theme"
 	},
 	"raw": {
 		"description": "All metadata fields found in the file",
@@ -73,6 +85,8 @@
 	"footer": {
 		"madeWith": "Made with",
 		"for": "for image metadata analysis",
-		"privacy": "🔒 Privacy: no files are sent to external servers"
+		"privacy": "Privacy: no image or metadata is sent to external servers",
+		"github": "GitHub",
+		"githubLabel": "Open repository on GitHub"
 	}
 }

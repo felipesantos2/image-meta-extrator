@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import Header from './components/Header';
 import DropZone from './components/DropZone';
 import ImagePreview from './components/ImagePreview';
@@ -9,24 +10,41 @@ import { parseMetadata } from './utils/parseMetadata';
 import { removeFileExtension } from './utils/helpers';
 
 export default function App() {
+	const { t } = useTranslation();
 	const [imageFile, setImageFile] = useState(null);
 	const [metadata, setMetadata] = useState(null);
 	const [loading, setLoading] = useState(false);
+	const [error, setError] = useState('');
 	const [theme, setTheme] = useState('dark');
 
 	useEffect(() => {
+		let cancelled = false;
+
 		if (!imageFile) {
 			setMetadata(null);
+			setError('');
 			return;
 		}
 
 		// TODO: Implementar editor em lote futuramente e resolver a atualização da data de criação (DateTimeOriginal) e outros campos.
+		setMetadata(null);
+		setError('');
 		setLoading(true);
 		parseMetadata(imageFile)
-			.then((data) => setMetadata(data))
-			.catch((err) => console.error('Erro ao processar metadados:', err))
-			.finally(() => setLoading(false));
-	}, [imageFile]);
+			.then((data) => {
+				if (!cancelled) setMetadata(data);
+			})
+			.catch(() => {
+				if (!cancelled) setError(t('metadata.parseError'));
+			})
+			.finally(() => {
+				if (!cancelled) setLoading(false);
+			});
+
+		return () => {
+			cancelled = true;
+		};
+	}, [imageFile, t]);
 
 	useEffect(() => {
 		document.documentElement.className = theme;
@@ -39,6 +57,7 @@ export default function App() {
 	function handleReset() {
 		setImageFile(null);
 		setMetadata(null);
+		setError('');
 	}
 
 	// [Nota Antigravity] Helper criado em src/support/helpers.js para evitar expressões regulares inline
@@ -66,7 +85,14 @@ export default function App() {
 							{loading ? (
 								<div className="flex items-center justify-center py-16 text-[var(--color-text-muted)]">
 									<span className="text-3xl animate-spin mr-3">⏳</span>
-									Processando...
+									{t('metadata.processing')}
+								</div>
+							) : error ? (
+								<div
+									className="p-4 border border-[var(--color-accent)] rounded text-center text-[var(--color-accent)]"
+									role="alert"
+								>
+									{error}
 								</div>
 							) : metadata ? (
 								<>

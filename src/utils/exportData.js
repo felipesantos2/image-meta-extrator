@@ -1,4 +1,4 @@
-import { escapeCsvQuotes } from './helpers';
+import { escapeCsvQuotes, neutralizeCsvFormula } from './helpers';
 
 /**
  * Funções para exportar metadados como JSON ou CSV.
@@ -55,8 +55,10 @@ function triggerDownload(blob, filename) {
 
 /** Escapa valores CSV que contenham vírgulas, aspas ou quebras de linha */
 function escapeCsvValue(value) {
-	if (value.includes(',') || value.includes('"') || value.includes('\n')) {
-		return `"${escapeCsvQuotes(value)}"`;
+	const safeValue = neutralizeCsvFormula(value);
+
+	if (safeValue.includes(',') || safeValue.includes('"') || safeValue.includes('\n')) {
+		return `"${escapeCsvQuotes(safeValue)}"`;
 	}
-	return value;
+	return safeValue;
 }

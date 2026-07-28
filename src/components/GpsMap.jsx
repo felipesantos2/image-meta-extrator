@@ -2,14 +2,17 @@ import { useTranslation } from 'react-i18next';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
+import markerIcon from 'leaflet/dist/images/marker-icon.png';
+import markerIconRetina from 'leaflet/dist/images/marker-icon-2x.png';
+import markerShadow from 'leaflet/dist/images/marker-shadow.png';
 import { Map, MapPin, Mountain } from 'lucide-react';
 
 // Corrigir o ícone padrão do Leaflet que quebra com bundlers como Vite.
 // Sem isso, o marker fica invisível.
 const defaultIcon = L.icon({
-	iconUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png',
-	iconRetinaUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon-2x.png',
-	shadowUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png',
+	iconUrl: markerIcon,
+	iconRetinaUrl: markerIconRetina,
+	shadowUrl: markerShadow,
 	iconSize: [25, 41],
 	iconAnchor: [12, 41],
 	popupAnchor: [1, -34],
@@ -84,6 +87,9 @@ export default function GpsMap({ gps }) {
 					</span>
 				)}
 			</div>
+			<p className="mt-3 text-xs text-center text-[var(--color-text-muted)]">
+				{t('gps.externalMapNotice')}
+			</p>
 		</div>
 	);
 }

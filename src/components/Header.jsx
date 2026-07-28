@@ -1,8 +1,13 @@
+import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Sun, Moon } from 'lucide-react';
 
 export default function Header({ theme, onToggleTheme }) {
 	const { t, i18n } = useTranslation();
+
+	useEffect(() => {
+		document.documentElement.lang = i18n.language === 'en' ? 'en' : 'pt-BR';
+	}, [i18n.language]);
 
 	function handleLanguageChange(e) {
 		i18n.changeLanguage(e.target.value);
@@ -44,7 +49,7 @@ export default function Header({ theme, onToggleTheme }) {
 							className="px-3 py-2 bg-[var(--color-surface)] border border-[var(--color-border)] rounded text-sm text-[var(--color-text)] cursor-pointer hover:border-[var(--color-accent)] transition-colors font-[inherit]"
 							value={i18n.language}
 							onChange={handleLanguageChange}
-							aria-label="Language"
+							aria-label={t('controls.language')}
 						>
 							<option value="pt">PT</option>
 							<option value="en">EN</option>
@@ -53,8 +58,10 @@ export default function Header({ theme, onToggleTheme }) {
 						<button
 							className="flex items-center justify-center w-10 h-10 border border-[var(--color-border)] rounded bg-[var(--color-surface)] text-[var(--color-text-secondary)] cursor-pointer hover:bg-[var(--color-surface-hover)] hover:text-[var(--color-text)] hover:border-[var(--color-accent)] transition-all"
 							onClick={onToggleTheme}
-							aria-label="Toggle theme"
-							title={theme === 'dark' ? 'Light mode' : 'Dark mode'}
+							aria-label={t('controls.toggleTheme')}
+							title={
+								theme === 'dark' ? t('controls.lightMode') : t('controls.darkMode')
+							}
 						>
 							{theme === 'dark' ? <Sun size={18} /> : <Moon size={18} />}
 						</button>

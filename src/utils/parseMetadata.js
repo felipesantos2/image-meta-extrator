@@ -95,14 +95,7 @@ export async function parseMetadata(file) {
 
 		return { camera, image, datetime, gps, raw };
 	} catch (error) {
-		console.error('Erro ao extrair metadados:', error);
-		return {
-			camera: {},
-			image: {},
-			datetime: {},
-			gps: null,
-			raw: {},
-		};
+		throw new Error('Não foi possível extrair os metadados da imagem.', { cause: error });
 	}
 }
 

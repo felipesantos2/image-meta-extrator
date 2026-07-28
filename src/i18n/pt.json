@@ -8,7 +8,8 @@
 		"title": "Arraste sua imagem aqui",
 		"or": "ou",
 		"button": "Selecionar arquivo",
-		"formats": "Suporta JPEG, PNG, TIFF, WebP e HEIC"
+		"formats": "Suporta JPEG, PNG, TIFF, WebP e HEIC",
+		"invalidFile": "Selecione um arquivo de imagem válido"
 	},
 	"preview": {
 		"filename": "Arquivo",
@@ -59,7 +60,18 @@
 		"latitude": "Latitude",
 		"longitude": "Longitude",
 		"altitude": "Altitude",
-		"noData": "Sem dados de localização para esta imagem"
+		"noData": "Sem dados de localização para esta imagem",
+		"externalMapNotice": "O mapa utiliza imagens fornecidas pelo OpenStreetMap"
+	},
+	"metadata": {
+		"processing": "Processando...",
+		"parseError": "Não foi possível ler esta imagem. Verifique se o arquivo é válido."
+	},
+	"controls": {
+		"language": "Selecionar idioma",
+		"toggleTheme": "Alternar tema",
+		"lightMode": "Usar tema claro",
+		"darkMode": "Usar tema escuro"
 	},
 	"raw": {
 		"description": "Todos os campos de metadados encontrados no arquivo",
@@ -73,6 +85,8 @@
 	"footer": {
 		"madeWith": "Feito com",
 		"for": "para análise de metadados de imagens",
-		"privacy": "🔒 Privacidade: nenhum arquivo é enviado para servidores externos"
+		"privacy": "Privacidade: nenhuma imagem ou metadado é enviado para servidores externos",
+		"github": "GitHub",
+		"githubLabel": "Abrir repositório no GitHub"
 	}
 }

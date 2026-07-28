@@ -16,7 +16,6 @@
 	--color-text-muted: #8c8075;
 	--color-accent: #e06b43;
 	--color-accent-secondary: #f0a25e;
-	--color-accent-glow: rgba(224, 107, 67, 0.25);
 	--color-accent-bg: rgba(224, 107, 67, 0.08);
 
 	/* Fonte principal */
@@ -49,7 +48,6 @@ html.light {
 	--color-text-muted: #a39485;
 	--color-accent: #c84c24;
 	--color-accent-secondary: #d97706;
-	--color-accent-glow: rgba(200, 76, 36, 0.2);
 	--color-accent-bg: rgba(200, 76, 36, 0.06);
 }
 
