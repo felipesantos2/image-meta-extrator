@@ -49,7 +49,7 @@ export default function App() {
 		<div className="min-h-screen flex flex-col bg-[var(--color-bg)] text-[var(--color-text)]">
 			<Header theme={theme} onToggleTheme={toggleTheme} />
 
-			<main className="flex-1 w-full max-w-5xl self-center px-4 py-6">
+			<main className="flex-1 w-full max-w-5xl mx-auto px-6 py-8">
 				{!imageFile && <DropZone onFileSelect={setImageFile} />}
 
 				{imageFile && (

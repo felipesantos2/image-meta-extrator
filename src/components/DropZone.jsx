@@ -87,11 +87,12 @@ export default function DropZone({ onFileSelect }) {
 
 				<div className="flex justify-center">
 					<button
-						className="inline-flex items-center gap-2 px-6 py-2.5 bg-[var(--color-accent)] text-white rounded font-medium cursor-pointer hover:bg-[var(--color-accent-secondary)] hover:-translate-y-0.5 transition-all"
+						className="inline-flex items-center gap-2 p-6 bg-[var(--color-accent)] text-white rounded font-medium cursor-pointer hover:bg-[var(--color-accent-secondary)] hover:-translate-y-0.5 transition-all"
 						onClick={handleButtonClick}
 						type="button"
 					>
 						<Upload size={16} />
+						
 						{t('dropzone.button')}
 					</button>
 				</div>
