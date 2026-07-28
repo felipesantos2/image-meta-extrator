@@ -86,6 +86,7 @@
 		"madeWith": "Made with",
 		"for": "for image metadata analysis",
 		"privacy": "Privacy: no image or metadata is sent to external servers",
+		"privacyPolicy": "Privacy policy",
 		"github": "GitHub",
 		"githubLabel": "Open repository on GitHub"
 	}

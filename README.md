@@ -49,3 +49,13 @@ npm run build     # gera a versão de produção em dist/
 ## Deploy
 
 O projeto inclui um `netlify.toml` com o comando de build e o diretório de publicação necessários para o Netlify.
+
+### Google AdSense
+
+O site está associado ao Publisher ID `pub-5297586230684986`. A integração inclui:
+
+- script e meta de verificação no `index.html`;
+- declaração do vendedor em `public/ads.txt`;
+- política de privacidade em `public/privacy.html`.
+
+Antes de ativar anúncios, configure a mensagem de consentimento em **AdSense → Privacidade e mensagens**. Blocos manuais exigem um Ad Slot ID; sem eles, a integração pode ser utilizada com Auto Ads.
