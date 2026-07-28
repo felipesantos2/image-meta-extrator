@@ -1,0 +1,78 @@
+{
+	"app": {
+		"title": "Image Meta Analyzer",
+		"subtitle": "Analise os metadados EXIF das suas imagens direto no navegador",
+		"privacy": "Seus arquivos nunca saem do seu navegador. Todo o processamento é local."
+	},
+	"dropzone": {
+		"title": "Arraste sua imagem aqui",
+		"or": "ou",
+		"button": "Selecionar arquivo",
+		"formats": "Suporta JPEG, PNG, TIFF, WebP e HEIC"
+	},
+	"preview": {
+		"filename": "Arquivo",
+		"size": "Tamanho",
+		"dimensions": "Dimensões",
+		"changeImage": "Trocar imagem"
+	},
+	"tabs": {
+		"camera": "Câmera",
+		"image": "Imagem",
+		"datetime": "Data / Hora",
+		"gps": "GPS",
+		"raw": "Dados Brutos"
+	},
+	"camera": {
+		"make": "Fabricante",
+		"model": "Modelo",
+		"lens": "Lente",
+		"focalLength": "Distância Focal",
+		"aperture": "Abertura",
+		"exposureTime": "Vel. do Obturador",
+		"iso": "ISO",
+		"flash": "Flash",
+		"whiteBalance": "Balanço de Branco",
+		"exposureMode": "Modo de Exposição",
+		"meteringMode": "Modo de Medição",
+		"exposureProgram": "Programa de Exposição"
+	},
+	"image": {
+		"width": "Largura",
+		"height": "Altura",
+		"colorSpace": "Espaço de Cor",
+		"bitDepth": "Profundidade de Bits",
+		"compression": "Compressão",
+		"orientation": "Orientação",
+		"xResolution": "Resolução X",
+		"yResolution": "Resolução Y",
+		"resolutionUnit": "Unidade de Resolução",
+		"software": "Software"
+	},
+	"datetime": {
+		"dateOriginal": "Data Original",
+		"dateCreated": "Data de Criação",
+		"dateModified": "Data de Modificação",
+		"timezone": "Fuso Horário"
+	},
+	"gps": {
+		"latitude": "Latitude",
+		"longitude": "Longitude",
+		"altitude": "Altitude",
+		"noData": "Sem dados de localização para esta imagem"
+	},
+	"raw": {
+		"description": "Todos os campos de metadados encontrados no arquivo",
+		"noData": "Nenhum metadado encontrado"
+	},
+	"export": {
+		"json": "Exportar JSON",
+		"csv": "Exportar CSV"
+	},
+	"noData": "Não disponível",
+	"footer": {
+		"madeWith": "Feito com",
+		"for": "para análise de metadados de imagens",
+		"privacy": "🔒 Privacidade: nenhum arquivo é enviado para servidores externos"
+	}
+}

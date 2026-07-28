@@ -1,0 +1,84 @@
+@import 'tailwindcss';
+
+/*
+ * Tema customizado do app usando CSS-first config do Tailwind v4.
+ * Define cores, fontes e variáveis para os modos dark e light.
+ */
+@theme {
+	/* Cores do tema dark (padrão) */
+	--color-bg: #141210;
+	--color-surface: #1f1b18;
+	--color-surface-hover: #2a2521;
+	--color-surface-elevated: rgba(31, 27, 24, 0.85);
+	--color-border: #3a322c;
+	--color-text: #f5ece5;
+	--color-text-secondary: #c8bfae;
+	--color-text-muted: #8c8075;
+	--color-accent: #e06b43;
+	--color-accent-secondary: #f0a25e;
+	--color-accent-glow: rgba(224, 107, 67, 0.25);
+	--color-accent-bg: rgba(224, 107, 67, 0.08);
+
+	/* Fonte principal */
+	--font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+	--font-serif: 'Georgia', 'Garamond', serif;
+}
+
+/* Estilos globais */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: var(--font-sans);
+	background-color: var(--color-bg);
+	color: var(--color-text);
+	min-height: 100vh;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/* Tema light — ativado pela classe .light no <html> */
+html.light {
+	--color-bg: #faf6f0;
+	--color-surface: #ffffff;
+	--color-surface-hover: #f4ede4;
+	--color-surface-elevated: rgba(255, 255, 255, 0.9);
+	--color-border: #e6dcce;
+	--color-text: #2e251e;
+	--color-text-secondary: #786b5d;
+	--color-text-muted: #a39485;
+	--color-accent: #c84c24;
+	--color-accent-secondary: #d97706;
+	--color-accent-glow: rgba(200, 76, 36, 0.2);
+	--color-accent-bg: rgba(200, 76, 36, 0.06);
+}
+
+/* Animação reutilizável de fade-in + slide */
+@keyframes fade-slide-in {
+	from {
+		opacity: 0;
+		transform: translateY(10px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.animate-fade-slide-in {
+	animation: fade-slide-in 0.4s ease both;
+}
+
+/* Fix para Leaflet dentro do Tailwind */
+.leaflet-container {
+	width: 100%;
+	height: 100%;
+	border-radius: 4px;
+}

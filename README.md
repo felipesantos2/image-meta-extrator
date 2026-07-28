@@ -1,17 +1,100 @@
-# React + Vite
+# Image Meta Analyzer
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Um extrator de metadados de imagem rápido, responsivo e focado em privacidade, que processa todas as informações de forma local, direta no seu navegador.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 📌 Índice
+1. [Sobre o Projeto](#-sobre-o-projeto)
+2. [Funcionalidades](#-funcionalidades)
+3. [Guia de Metadados (Documentação)](#-guia-de-metadados-documenta%C3%A7%C3%A3o)
+4. [Tecnologias Utilizadas](#-tecnologias-utilizadas)
+5. [Configuração e Instalação](#-configura%C3%A7%C3%A3o-e-instala%C3%A7%C3%A3o)
+6. [Design System & Estilização](#-design-system--estiliza%C3%A7%C3%A3o)
+7. [Diretrizes para Agentes de IA](#-diretrizes-para-agentes-de-ia)
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📖 Sobre o Projeto
 
-## Expanding the Oxlint configuration
+O **Image Meta Analyzer** é uma ferramenta para fotógrafos, designers, desenvolvedores e entusiastas da privacidade. Ela permite arrastar qualquer arquivo de imagem para visualizar instantaneamente os metadados técnicos embarcados (EXIF, TIFF, GPS), sem enviar nenhum dado para servidores externos. Todo o processamento é executado localmente usando as APIs do próprio navegador.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
-# image-meta-extrator
+---
+
+## ✨ Funcionalidades
+
+* **Processamento Local-First**: Privacidade absoluta de dados (os arquivos nunca saem da sua máquina).
+* **Leitura EXIF & TIFF**: Informações completas de exposição, câmera, lente e propriedades da imagem.
+* **Mapa de Localização GPS**: Renderização em tempo real das coordenadas de satélite integradas com o Leaflet.
+* **Exportação Multiformato**: Salve os dados da tabela em arquivos JSON ou planilhas CSV.
+* **Internacionalização**: Suporte completo a Inglês (EN) e Português (PT) via `react-i18next`.
+* **Ajuste de Tema**: Modos claro (light) e escuro (dark) com transições fluidas.
+
+---
+
+## 📄 Guia de Metadados (Documentação)
+
+Para compreender em detalhes o significado de cada campo técnico exibido pelo aplicativo e suas implicações de segurança, consulte a nossa documentação dedicada:
+
+👉 **[Guia de Metadados de Imagem (METADATA.md)](METADATA.md)**
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+* **Vite + React 19**: Plataforma de compilação rápida e framework declarativo de componentes.
+* **Tailwind CSS v4**: Compilador de CSS moderno estruturado em tokens de design globais.
+* **Exifr**: Biblioteca leve de alto desempenho para decodificar cabeçalhos binários de imagem.
+* **Leaflet & React Leaflet**: Mapeamento interativo para visualização de dados geográficos.
+* **Lucide React**: Biblioteca de ícones vetoriais em formato SVG.
+
+---
+
+## 🚀 Configuração e Instalação
+
+### Pré-requisitos
+Você precisará do **Node.js** instalado na sua máquina.
+
+### Passos para rodar localmente
+
+1. **Instalar dependências**:
+   ```bash
+   npm install
+   ```
+
+2. **Iniciar servidor de desenvolvimento**:
+   ```bash
+   npm run dev
+   ```
+   *O aplicativo estará disponível por padrão em `http://localhost:5173`.*
+
+3. **Gerar build de produção**:
+   ```bash
+   npm run build
+   ```
+
+4. **Rodar formatação de código**:
+   ```bash
+   npm run format
+   ```
+
+---
+
+## 🎨 Design System & Estilização
+
+Nossos estilos visam uma estética editorial premium ("de humanos para humanos") baseada em tons terrosos quentes (terracota, cobre, areia e carvão) e tipografia com serifa para títulos. 
+
+Todas as variáveis visuais estão centralizadas em [src/index.css](src/index.css) no seletor `@theme`. **Nunca utilize classes utilitárias de cores do Tailwind diretamente nos componentes**; em vez disso, referencie as variáveis globais (ex: `bg-[var(--color-bg)]`, `text-[var(--color-accent)]`).
+
+---
+
+## 📅 Roadmap / Futuras Implementações
+
+* **Editor em Lote (Batch Editor)**: Permitir a edição de metadados em múltiplos arquivos de imagem simultaneamente.
+* **Edição de Campos Específicos**: Implementação para atualizar a data de criação da imagem (`DateTimeOriginal`) e outros campos necessários diretamente pelo app.
+
+---
+
+## 🤖 Diretrizes para Agentes de IA
+
+Este repositório possui regras estritas de arquitetura e código descritas em [.agents/AGENTS.md](.agents/AGENTS.md). Desenvolvedores artificiais que atuarem no projeto devem ler o arquivo de regras antes de propor alterações.

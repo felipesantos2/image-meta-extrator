@@ -1,0 +1,78 @@
+{
+	"app": {
+		"title": "Image Meta Analyzer",
+		"subtitle": "Analyze EXIF metadata from your images right in your browser",
+		"privacy": "Your files never leave your browser. All processing is done locally."
+	},
+	"dropzone": {
+		"title": "Drop your image here",
+		"or": "or",
+		"button": "Select file",
+		"formats": "Supports JPEG, PNG, TIFF, WebP and HEIC"
+	},
+	"preview": {
+		"filename": "File",
+		"size": "Size",
+		"dimensions": "Dimensions",
+		"changeImage": "Change image"
+	},
+	"tabs": {
+		"camera": "Camera",
+		"image": "Image",
+		"datetime": "Date / Time",
+		"gps": "GPS",
+		"raw": "Raw Data"
+	},
+	"camera": {
+		"make": "Manufacturer",
+		"model": "Model",
+		"lens": "Lens",
+		"focalLength": "Focal Length",
+		"aperture": "Aperture",
+		"exposureTime": "Shutter Speed",
+		"iso": "ISO",
+		"flash": "Flash",
+		"whiteBalance": "White Balance",
+		"exposureMode": "Exposure Mode",
+		"meteringMode": "Metering Mode",
+		"exposureProgram": "Exposure Program"
+	},
+	"image": {
+		"width": "Width",
+		"height": "Height",
+		"colorSpace": "Color Space",
+		"bitDepth": "Bit Depth",
+		"compression": "Compression",
+		"orientation": "Orientation",
+		"xResolution": "X Resolution",
+		"yResolution": "Y Resolution",
+		"resolutionUnit": "Resolution Unit",
+		"software": "Software"
+	},
+	"datetime": {
+		"dateOriginal": "Original Date",
+		"dateCreated": "Date Created",
+		"dateModified": "Date Modified",
+		"timezone": "Timezone"
+	},
+	"gps": {
+		"latitude": "Latitude",
+		"longitude": "Longitude",
+		"altitude": "Altitude",
+		"noData": "No location data available for this image"
+	},
+	"raw": {
+		"description": "All metadata fields found in the file",
+		"noData": "No metadata found"
+	},
+	"export": {
+		"json": "Export JSON",
+		"csv": "Export CSV"
+	},
+	"noData": "Not available",
+	"footer": {
+		"madeWith": "Made with",
+		"for": "for image metadata analysis",
+		"privacy": "🔒 Privacy: no files are sent to external servers"
+	}
+}
