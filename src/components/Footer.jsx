@@ -62,7 +62,7 @@ export default function Footer() {
 					</nav>
 
 					<p className="text-[10px] opacity-60 text-center mt-1">
-						&copy; {new Date().getFullYear()} Image Meta Analyzer.
+						&copy; {new Date().getFullYear()} Image Meta Analyzer · v{__APP_VERSION__}
 					</p>
 				</div>
 			</div>

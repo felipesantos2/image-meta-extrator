@@ -16,6 +16,7 @@ export default [
 			sourceType: 'module',
 			globals: {
 				...globals.browser,
+				__APP_VERSION__: 'readonly',
 			},
 			parserOptions: {
 				ecmaFeatures: { jsx: true },
@@ -46,9 +47,9 @@ export default [
 			'no-unused-vars': ['warn', { argsIgnorePattern: '^_' }],
 			'no-console': ['warn', { allow: ['error'] }],
 			'react/prop-types': 'off', // Não usamos PropTypes neste projeto
-			
+
 			// Desativar regra que impede setState em useEffect
-			'react-hooks/set-state-in-effect': 'off'
+			'react-hooks/set-state-in-effect': 'off',
 		},
 	},
 

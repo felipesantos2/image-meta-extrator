@@ -51,6 +51,8 @@ npm run build     # gera a versão de produção em dist/
 
 O site está publicado em [image-met-extra.netlify.app](https://image-met-extra.netlify.app/). O projeto inclui um `netlify.toml` com o comando de build e o diretório de publicação necessários para o Netlify.
 
+A versão segue SemVer no `package.json` e é exibida automaticamente no rodapé da aplicação.
+
 ### Google AdSense
 
 O site está associado ao Publisher ID `pub-5297586230684986`. A integração inclui:
