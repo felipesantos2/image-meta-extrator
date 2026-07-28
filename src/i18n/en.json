@@ -71,7 +71,9 @@
 		"language": "Select language",
 		"toggleTheme": "Toggle theme",
 		"lightMode": "Use light theme",
-		"darkMode": "Use dark theme"
+		"darkMode": "Use dark theme",
+		"githubLabel": "Open repository on GitHub",
+		"linkedinLabel": "Open LinkedIn profile"
 	},
 	"raw": {
 		"description": "All metadata fields found in the file",
@@ -86,8 +88,6 @@
 		"madeWith": "Made with",
 		"for": "for image metadata analysis",
 		"privacy": "Privacy: no image or metadata is sent to external servers",
-		"privacyPolicy": "Privacy policy",
-		"github": "GitHub",
-		"githubLabel": "Open repository on GitHub"
+		"privacyPolicy": "Privacy policy"
 	}
 }
