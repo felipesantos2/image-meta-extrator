@@ -55,10 +55,15 @@ A versão segue SemVer no `package.json` e é exibida automaticamente no rodapé
 
 ### Google AdSense
 
-O site está associado ao Publisher ID `pub-5297586230684986`. A integração inclui:
+O site está associado ao Publisher ID `pub-5297586230684986`, mas a veiculação de anúncios
+está desativada. A configuração mantida inclui:
 
-- script e meta de verificação no `index.html`;
+- meta de verificação no `index.html`;
 - declaração do vendedor em `public/ads.txt`;
 - política de privacidade em `public/privacy.html`.
 
-Antes de ativar anúncios, configure a mensagem de consentimento em **AdSense → Privacidade e mensagens**. Blocos manuais exigem um Ad Slot ID; sem eles, a integração pode ser utilizada com Auto Ads.
+O script `adsbygoogle.js` não deve ser carregado globalmente. Como a SPA possui estados de
+upload, processamento e erro, o Auto Ads pode inserir anúncios em telas usadas para fins
+comportamentais. Uma futura ativação deve usar um bloco manual, com Ad Slot ID, renderizado
+somente junto ao conteúdo editorial e após a configuração de consentimento em
+**AdSense → Privacidade e mensagens**.

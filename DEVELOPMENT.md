@@ -97,7 +97,11 @@ Use essa pasta apenas para arquivos que precisam manter nome e endereço públic
 O processamento da imagem ocorre no navegador. Entretanto, algumas funcionalidades fazem requisições externas:
 
 - OpenStreetMap fornece os tiles do mapa.
-- Google AdSense fornece publicidade e pode utilizar cookies.
+- Google Analytics coleta métricas conforme a escolha de consentimento do visitante.
+
+A conta AdSense é identificada apenas pela meta de verificação. Não carregue Auto Ads nesta
+SPA: anúncios não podem aparecer nos estados de upload, processamento, erro ou consentimento.
+Uma futura integração deve usar bloco manual restrito ao conteúdo editorial.
 
 Alterações nesses serviços devem permanecer coerentes com a política de privacidade.
 

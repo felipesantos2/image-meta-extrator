@@ -17,7 +17,7 @@ O Image Meta Analyzer é uma ferramenta executada no navegador para leitura de m
 ## Main pages
 
 - [Image Meta Analyzer](https://image-met-extra.netlify.app/): Analyze image metadata in the browser.
-- [Privacy policy](https://image-met-extra.netlify.app/privacy.html): Image processing, external map services, advertising, and cookies.
+- [Privacy policy](https://image-met-extra.netlify.app/privacy.html): Image processing, external map services, analytics, and cookies.
 
 ## Documentation and source
 

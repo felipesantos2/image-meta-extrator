@@ -84,7 +84,7 @@
 	},
 	"consent": {
 		"title": "Sua privacidade",
-		"description": "Usamos serviços do Google para métricas e publicidade. Você pode aceitar ou manter o armazenamento para esses serviços desativado.",
+		"description": "Usamos o Google Analytics para métricas de uso. Você pode aceitar ou manter o armazenamento para esse serviço desativado.",
 		"policy": "Saiba mais",
 		"accept": "Aceitar",
 		"reject": "Recusar"

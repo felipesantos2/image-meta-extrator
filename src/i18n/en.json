@@ -84,7 +84,7 @@
 	},
 	"consent": {
 		"title": "Your privacy",
-		"description": "We use Google services for analytics and advertising. You can accept them or keep storage disabled for these services.",
+		"description": "We use Google Analytics for usage metrics. You can accept it or keep storage disabled for this service.",
 		"policy": "Learn more",
 		"accept": "Accept",
 		"reject": "Reject"

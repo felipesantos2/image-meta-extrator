@@ -1,93 +1,77 @@
 <!doctype html>
 <html lang="pt-BR">
-	<head>
-		<meta charset="UTF-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="manifest" href="/manifest.webmanifest" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-		<!-- Consent Mode: o armazenamento fica negado até a escolha do visitante. -->
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag() {
-				dataLayer.push(arguments);
-			}
+<head>
+	<meta charset="UTF-8" />
+	<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+	<link rel="manifest" href="/manifest.webmanifest" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-			const consentAccepted =
-				localStorage.getItem('image-meta-google-consent') === 'accepted';
-			const consentValue = consentAccepted ? 'granted' : 'denied';
+	<!-- Consent Mode: o armazenamento fica negado até a escolha do visitante. -->
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() {
+			dataLayer.push(arguments);
+		}
 
-			gtag('consent', 'default', {
-				ad_storage: consentValue,
-				ad_user_data: consentValue,
-				ad_personalization: consentValue,
-				analytics_storage: consentValue,
-				functionality_storage: 'granted',
-				security_storage: 'granted',
-				wait_for_update: 500,
-			});
-		</script>
+		const consentAccepted =
+			localStorage.getItem('image-meta-google-consent') === 'accepted';
+		const consentValue = consentAccepted ? 'granted' : 'denied';
 
-		<!-- Google AdSense -->
-		<meta name="google-adsense-account" content="ca-pub-5297586230684986" />
-		<script
-			async
-			src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5297586230684986"
-			crossorigin="anonymous"
-		></script>
+		gtag('consent', 'default', {
+			ad_storage: consentValue,
+			ad_user_data: consentValue,
+			ad_personalization: consentValue,
+			analytics_storage: consentValue,
+			functionality_storage: 'granted',
+			security_storage: 'granted',
+			wait_for_update: 500,
+		});
+	</script>
 
-		<!-- Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-WMNCYNSNMJ"></script>
-		<script>
-			gtag('js', new Date());
-			gtag('config', 'G-WMNCYNSNMJ');
-		</script>
+	<!-- Associação da conta AdSense; a veiculação permanece desativada. -->
+	<meta name="google-adsense-account" content="ca-pub-5297586230684986" />
 
-		<!-- SEO -->
-		<title>Leitor de Metadados de Imagem Online | EXIF e GPS</title>
-		<meta
-			name="description"
-			content="Analise metadados EXIF, IPTC, câmera e GPS de imagens diretamente no navegador, com processamento local do arquivo."
-		/>
-		<meta name="author" content="Felipe Pinheiro" />
-		<meta name="robots" content="index, follow" />
-		<meta name="theme-color" content="#141210" />
-		<link rel="canonical" href="https://image-met-extra.netlify.app/" />
-		<link rel="author" href="/humans.txt" type="text/plain" />
+	<!-- Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-WMNCYNSNMJ"></script>
+	<script>
+		gtag('js', new Date());
+		gtag('config', 'G-WMNCYNSNMJ');
+	</script>
 
-		<!-- Open Graph -->
-		<meta property="og:type" content="website" />
-		<meta property="og:locale" content="pt_BR" />
-		<meta property="og:url" content="https://image-met-extra.netlify.app/" />
-		<meta property="og:title" content="Leitor de Metadados de Imagem Online | EXIF e GPS" />
-		<meta
-			property="og:description"
-			content="Analise metadados EXIF, IPTC, câmera e GPS diretamente no navegador."
-		/>
-		<meta property="og:image" content="https://image-met-extra.netlify.app/og-image.png" />
-		<meta property="og:image:width" content="1729" />
-		<meta property="og:image:height" content="910" />
-		<meta property="og:image:type" content="image/png" />
-		<meta
-			property="og:image:alt"
-			content="Image Meta Analyzer com ilustração de câmera e referências a EXIF, IPTC e GPS"
-		/>
-		<meta property="og:site_name" content="Image Meta Analyzer" />
+	<!-- SEO -->
+	<title>Leitor de Metadados de Imagem Online | EXIF e GPS</title>
+	<meta name="description"
+		content="Analise metadados EXIF, IPTC, câmera e GPS de imagens diretamente no navegador, com processamento local do arquivo." />
+	<meta name="author" content="Felipe Pinheiro" />
+	<meta name="robots" content="index, follow" />
+	<meta name="theme-color" content="#141210" />
+	<link rel="canonical" href="https://image-met-extra.netlify.app/" />
+	<link rel="author" href="/humans.txt" type="text/plain" />
 
-		<!-- Twitter -->
-		<meta name="twitter:card" content="summary_large_image" />
-		<meta name="twitter:title" content="Leitor de Metadados de Imagem Online | EXIF e GPS" />
-		<meta
-			name="twitter:description"
-			content="Analise metadados EXIF, IPTC, câmera e GPS diretamente no navegador."
-		/>
-		<meta name="twitter:image" content="https://image-met-extra.netlify.app/og-image.png" />
-		<meta
-			name="twitter:image:alt"
-			content="Image Meta Analyzer com ilustração de câmera e referências a EXIF, IPTC e GPS"
-		/>
+	<!-- Open Graph -->
+	<meta property="og:type" content="website" />
+	<meta property="og:locale" content="pt_BR" />
+	<meta property="og:url" content="https://image-met-extra.netlify.app/" />
+	<meta property="og:title" content="Leitor de Metadados de Imagem Online | EXIF e GPS" />
+	<meta property="og:description" content="Analise metadados EXIF, IPTC, câmera e GPS diretamente no navegador." />
+	<meta property="og:image" content="https://image-met-extra.netlify.app/og-image.png" />
+	<meta property="og:image:width" content="1729" />
+	<meta property="og:image:height" content="910" />
+	<meta property="og:image:type" content="image/png" />
+	<meta property="og:image:alt"
+		content="Image Meta Analyzer com ilustração de câmera e referências a EXIF, IPTC e GPS" />
+	<meta property="og:site_name" content="Image Meta Analyzer" />
 
-		<script type="application/ld+json">
+	<!-- Twitter -->
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="Leitor de Metadados de Imagem Online | EXIF e GPS" />
+	<meta name="twitter:description" content="Analise metadados EXIF, IPTC, câmera e GPS diretamente no navegador." />
+	<meta name="twitter:image" content="https://image-met-extra.netlify.app/og-image.png" />
+	<meta name="twitter:image:alt"
+		content="Image Meta Analyzer com ilustração de câmera e referências a EXIF, IPTC e GPS" />
+
+	<script type="application/ld+json">
 			{
 				"@context": "https://schema.org",
 				"@type": "WebApplication",
@@ -110,10 +94,11 @@
 				}
 			}
 		</script>
-	</head>
+</head>
 
-	<body>
-		<div id="root"></div>
-		<script type="module" src="/src/main.jsx"></script>
-	</body>
+<body>
+	<div id="root"></div>
+	<script type="module" src="/src/main.jsx"></script>
+</body>
+
 </html>
