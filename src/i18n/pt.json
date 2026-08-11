@@ -104,7 +104,7 @@
 			},
 			"export": {
 				"title": "Exporte o resultado",
-				"description": "Baixe os metadados disponíveis em JSON ou CSV para documentação, inventário ou uma análise posterior."
+				"description": "Baixe os metadados disponíveis em <JSON> ou <CSV> para documentação, inventário ou uma análise posterior."
 			}
 		},
 		"metadata": {
@@ -128,7 +128,7 @@
 			}
 		},
 		"privacy": {
-			"title": "A imagem é processada localmente",
+			"title": "As imagens são processadas localmente",
 			"description": "A leitura do arquivo e a extração dos metadados acontecem no seu navegador. O aplicativo não envia a imagem nem os dados extraídos para um servidor próprio.",
 			"mapNotice": "Se houver coordenadas e você abrir a aba GPS, o mapa consulta o OpenStreetMap. Essa consulta externa pode revelar ao provedor dados técnicos e a região mostrada no mapa.",
 			"link": "Leia a política de privacidade completa"
@@ -152,7 +152,7 @@
 	"footer": {
 		"madeWith": "Feito com",
 		"for": "para análise de metadados de imagens",
-		"privacy": "A imagem é processada localmente; o mapa usa um serviço externo",
+		"privacy": "As imagens são processadas localmente; o mapa usa um serviço externo",
 		"privacyPolicy": "Política de privacidade",
 		"cookieSettings": "Preferências de cookies"
 	}

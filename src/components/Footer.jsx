@@ -11,7 +11,7 @@ export default function Footer() {
 				<div className="flex w-full flex-col items-center justify-center gap-3.5 text-center">
 					{/* Marca sutil no rodapé */}
 					<CameraLogo
-						className="w-6 h-6 text-[var(--color-text-muted)] opacity-30"
+						className="w-8 h-8 text-[var(--color-text-muted)] opacity-30 stroke-white"
 						subtleDetails
 					/>
 
