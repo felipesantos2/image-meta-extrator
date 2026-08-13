@@ -2,6 +2,12 @@
 
 Aplicação web para visualizar metadados de imagens diretamente no navegador. A imagem e os metadados extraídos não são enviados pelo aplicativo.
 
+
+Feito 100% com auxílio de IA (React). Direcionei o produto e a lógica,
+mas ainda não domino React e Frameworks JavaScript o suficiente para manter o código sozinho.
+
+Ideia futura: evoluir para corrigir/atualizar metadados, ajustando imagens para uma linha do tempo em apps como Google fotos
+
 ## Funcionalidades
 
 - Leitura de metadados EXIF, TIFF, IPTC, XMP, ICC e GPS.
